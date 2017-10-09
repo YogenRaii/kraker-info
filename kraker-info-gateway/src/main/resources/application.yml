@@ -10,7 +10,7 @@ zuul:
   routes:
     users:
       path: /users/**
-      serviceId: user-service
+      serviceId: kraker-info-user-svc
       stripPrefix: false
 ribbon:
   eureka:

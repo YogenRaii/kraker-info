@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by Yogen on 9/26/2017.
  */
-@FeignClient(name = "bookmark-service", fallback = BookmarkClientImpl.class)
+@FeignClient(name = "kraker-info-bookmark-svc", fallback = BookmarkClientImpl.class)
 public interface BookmarkClient {
     @RequestMapping(method = RequestMethod.GET, value = "/{userId}/bookmarks")
     List<Bookmark> getBookmarks(@PathVariable("userId") String userId);
