@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>bookmark-service</name>
+	<name>raker-info-bookmark-svc</name>
 	<description>Demo project for Eureka Client</description>
 
 	<parent>

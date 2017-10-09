@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.eprogrammerz.examples.cloud</groupId>
-	<artifactId>kraker-info-zuul</artifactId>
+	<artifactId>kraker-info-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>zuul-proxy-server</name>
+	<name>kraker-info-gateway</name>
 	<description>Demo project for Zuul Proxy</description>
 
 	<parent>

@@ -8,7 +8,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>user-service</name>
+	<name>kraker-info-user-svc</name>
 	<description>Demo project for Eureka Client</description>
 
 	<parent>
