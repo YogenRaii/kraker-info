@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kraker-info.iml" filepath="$PROJECT_DIR$/kraker-info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kraker-info-bookmark-svc/bookmark-service.iml" filepath="$PROJECT_DIR$/kraker-info-bookmark-svc/bookmark-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kraker-info-eureka/eureka-service.iml" filepath="$PROJECT_DIR$/kraker-info-eureka/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kraker-info-gateway/kraker-info-gateway.iml" filepath="$PROJECT_DIR$/kraker-info-gateway/kraker-info-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kraker-info-user-svc/user-service.iml" filepath="$PROJECT_DIR$/kraker-info-user-svc/user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kraker-info-zipkin/zipkin-server.iml" filepath="$PROJECT_DIR$/kraker-info-zipkin/zipkin-server.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+server:
+  port: ${EUREKA_CLIENT_PORT:9098}
+
+spring:
+  jpa:
+    generate-ddl: true
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+
+---
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${APPLICATION_DOMAIN}
+    nonSecurePort: 80
