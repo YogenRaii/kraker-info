@@ -14,6 +14,7 @@ import java.util.List;
  */
 @FeignClient(name = "kraker-info-bookmark-svc", fallback = BookmarkClientImpl.class)
 public interface BookmarkClient {
+//    @CachePut(value = "bookmarks", key = "#p0")
     @RequestMapping(method = RequestMethod.GET, value = "/{userId}/bookmarks")
     List<Bookmark> getBookmarks(@PathVariable("userId") String userId);
 }
