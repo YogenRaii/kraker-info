@@ -1,7 +1,6 @@
 package com.eprogrammerz.examples.models;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**

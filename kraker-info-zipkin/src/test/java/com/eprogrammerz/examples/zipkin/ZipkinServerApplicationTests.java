@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.cloud;
+package com.eprogrammerz.examples.zipkin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

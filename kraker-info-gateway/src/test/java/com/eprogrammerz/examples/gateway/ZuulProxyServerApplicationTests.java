@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.eureka;
+package com.eprogrammerz.examples.gateway;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class BookmarkServiceApplicationTests {
+public class ZuulProxyServerApplicationTests {
 
 	@Test
 	public void contextLoads() {

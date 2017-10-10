@@ -4,11 +4,11 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${services.eureka-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+      defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/bookmarkSvc/
 
 ---
 spring:
-  profiles: cloud
+  profiles: zipkin
 eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}

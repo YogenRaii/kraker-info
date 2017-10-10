@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.cloud.config;
+package com.eprogrammerz.examples.gateway.config;
 
 import org.springframework.cloud.sleuth.Sampler;
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;

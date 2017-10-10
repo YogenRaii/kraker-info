@@ -1,7 +1,7 @@
-package com.eprogrammerz.examples.eureka.controllers;
+package com.eprogrammerz.examples.bookmarkSvc.controllers;
 
-import com.eprogrammerz.examples.eureka.models.Bookmark;
-import com.eprogrammerz.examples.eureka.repositories.BookmarkRepository;
+import com.eprogrammerz.examples.bookmarkSvc.models.Bookmark;
+import com.eprogrammerz.examples.bookmarkSvc.repositories.BookmarkRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

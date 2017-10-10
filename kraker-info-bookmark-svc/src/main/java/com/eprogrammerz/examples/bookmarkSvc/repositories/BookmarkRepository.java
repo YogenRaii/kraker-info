@@ -1,6 +1,6 @@
-package com.eprogrammerz.examples.eureka.repositories;
+package com.eprogrammerz.examples.bookmarkSvc.repositories;
 
-import com.eprogrammerz.examples.eureka.models.Bookmark;
+import com.eprogrammerz.examples.bookmarkSvc.models.Bookmark;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

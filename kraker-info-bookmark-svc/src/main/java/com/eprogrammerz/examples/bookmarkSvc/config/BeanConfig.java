@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.eureka.config;
+package com.eprogrammerz.examples.bookmarkSvc.config;
 
 import org.springframework.cloud.sleuth.Sampler;
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;

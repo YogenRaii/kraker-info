@@ -1,6 +1,5 @@
-package com.eprogrammerz.examples.eureka.models;
+package com.eprogrammerz.examples.bookmarkSvc.models;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
