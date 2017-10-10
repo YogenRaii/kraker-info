@@ -1,10 +1,5 @@
 server:
-  port: ${EUREKA_CLIENT_PORT:9098}
-
-spring:
-  jpa:
-    generate-ddl: true
-
+  port: ${KRAKER_INFO_CONFIG_PORT:8888}
 
 eureka:
   client:
@@ -13,7 +8,7 @@ eureka:
 
 ---
 spring:
-  profiles: zipkin
+  profiles: config
 eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}

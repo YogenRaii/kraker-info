@@ -8,7 +8,7 @@ feign:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/bookmarkSvc/
+      defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
 
 ---
 spring:
