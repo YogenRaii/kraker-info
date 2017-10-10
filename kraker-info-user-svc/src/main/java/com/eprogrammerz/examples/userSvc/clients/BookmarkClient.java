@@ -1,7 +1,7 @@
-package com.eprogrammerz.examples.clients;
+package com.eprogrammerz.examples.userSvc.clients;
 
-import com.eprogrammerz.examples.clients.impl.BookmarkClientImpl;
-import com.eprogrammerz.examples.models.Bookmark;
+import com.eprogrammerz.examples.userSvc.clients.impl.BookmarkClientImpl;
+import com.eprogrammerz.examples.userSvc.models.Bookmark;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

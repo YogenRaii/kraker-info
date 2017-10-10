@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples;
+package com.eprogrammerz.examples.userSvc;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

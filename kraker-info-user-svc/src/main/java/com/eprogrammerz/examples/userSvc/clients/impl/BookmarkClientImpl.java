@@ -1,7 +1,7 @@
-package com.eprogrammerz.examples.clients.impl;
+package com.eprogrammerz.examples.userSvc.clients.impl;
 
-import com.eprogrammerz.examples.clients.BookmarkClient;
-import com.eprogrammerz.examples.models.Bookmark;
+import com.eprogrammerz.examples.userSvc.clients.BookmarkClient;
+import com.eprogrammerz.examples.userSvc.models.Bookmark;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;
 

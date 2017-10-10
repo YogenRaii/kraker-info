@@ -1,8 +1,8 @@
-package com.eprogrammerz.examples.controllers;
+package com.eprogrammerz.examples.userSvc.controllers;
 
-import com.eprogrammerz.examples.clients.BookmarkClient;
-import com.eprogrammerz.examples.models.Bookmark;
-import com.eprogrammerz.examples.models.User;
+import com.eprogrammerz.examples.userSvc.clients.BookmarkClient;
+import com.eprogrammerz.examples.userSvc.models.Bookmark;
+import com.eprogrammerz.examples.userSvc.models.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

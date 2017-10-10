@@ -1,4 +1,4 @@
-package com.eprogrammerz.examples.models;
+package com.eprogrammerz.examples.userSvc.models;
 
 import lombok.Getter;
 import lombok.Setter;
