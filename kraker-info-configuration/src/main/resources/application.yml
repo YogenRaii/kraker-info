@@ -1,14 +1,21 @@
 server:
   port: ${KRAKER_INFO_CONFIG_PORT:8888}
-
 eureka:
   client:
     serviceUrl:
       defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YogenRaii/kraker-info.git
+          clone-on-start: true
+          search-paths: kraker-info-config
 
 ---
 spring:
-  profiles: config
+  profiles: cloud
 eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}
