@@ -1,0 +1,15 @@
+matrix:
+  include:
+    - language: java
+      sudo: false
+      jdk: oraclejdk8
+      install: true
+branches:
+  only:
+  - master
+
+dist: trusty
+
+env:
+  global:
+      - SPRING_PROFILES_ACTIVE=dev
