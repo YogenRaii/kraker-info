@@ -1,8 +1,8 @@
 package com.eprogrammerz.examples.userSvc.controllers;
 
-import com.eprogrammerz.examples.userSvc.clients.BookmarkClient;
 import com.eprogrammerz.examples.userSvc.models.Bookmark;
 import com.eprogrammerz.examples.userSvc.models.User;
+import com.eprogrammerz.examples.userSvc.services.BookmarkService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,13 +27,13 @@ public class UserController {
     @Value("${env.current:local}")
     private String currentEnv;
 
-    private final BookmarkClient bookmarkClient;
+    private final BookmarkService bookmarkService;
 
     @GetMapping("/users/{userId}")
     public ResponseEntity<User> getUserInfo(@PathVariable("userId") String userId) {
         log.info("Current Environment: {}", currentEnv);
 
-        List<Bookmark> bookmarks = this.bookmarkClient.getBookmarks(userId);
+        List<Bookmark> bookmarks = this.bookmarkService.getBookmarksByUserId(userId);
         User user = new User(userId, bookmarks);
         return new ResponseEntity<User>(user, HttpStatus.OK);
     }
