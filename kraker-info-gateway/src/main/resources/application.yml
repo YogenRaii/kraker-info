@@ -6,15 +6,19 @@ eureka:
     serviceUrl:
       defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
     registerWithEureka: false
+
 zuul:
+  prefix: /api
   routes:
     users:
-      path: /users/**
+      path: /userSvc/**
       serviceId: kraker-info-user-svc
-      stripPrefix: false
+#      stripPrefix: false
+
 ribbon:
   eureka:
     enabled: true
+
 hystrix:
   command:
     default:
@@ -25,7 +29,7 @@ hystrix:
 
 ---
 spring:
-  profiles: zipkin
+  profiles: cloud
 eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}
