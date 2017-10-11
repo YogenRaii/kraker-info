@@ -43,3 +43,8 @@ public class UserController {
 http://localhost:${port}/refresh
 ```
 url to make sure those values are refreshed for the context.
+
+
+#### Setup Redis server
+
+Redis is being used for caching with client Jedis. []Download](https://github.com/MicrosoftArchive/redis/releases) Redis for windows and start server to enable caching.
