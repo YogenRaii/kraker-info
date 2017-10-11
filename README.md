@@ -37,14 +37,14 @@ public class UserController {
 }
 ```
 
-3. Once you change the value at `.yml` file, hit 
+3. Once you change the value at `.yml` file, make `POST` request to the endpoint 
 
 ```$xslt
 http://localhost:${port}/refresh
 ```
-url to make sure those values are refreshed for the context.
+to make sure those values are refreshed for the context.
 
 
 #### Setup Redis server
 
-Redis is being used for caching with client Jedis. []Download](https://github.com/MicrosoftArchive/redis/releases) Redis for windows and start server to enable caching.
+Redis is being used for caching with client Jedis. [Download](https://github.com/MicrosoftArchive/redis/releases) Redis for windows and start server to enable caching.
