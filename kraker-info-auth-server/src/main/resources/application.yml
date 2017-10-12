@@ -1,0 +1,24 @@
+server:
+  port: ${AUTH_SERVER_PORT:9999}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+
+security:
+  user:
+    name: root
+    password: password
+  oauth2:
+    client:
+      client-id: kraker
+      client-secret: kraker-secret
+
+---
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${APPLICATION_DOMAIN}
+    nonSecurePort: 80

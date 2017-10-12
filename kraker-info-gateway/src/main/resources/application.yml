@@ -7,6 +7,10 @@ eureka:
       defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
     registerWithEureka: false
 
+logging:
+  level:
+    org.springframework.cloud.netflix.zuul: TRACE
+
 ribbon:
   eureka:
     enabled: true
