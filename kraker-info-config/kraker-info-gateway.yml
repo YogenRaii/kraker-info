@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+# routing config
+zuul:
+  prefix: /api
+  routes:
+    users:
+      path: /userSvc/**
+      serviceId: kraker-info-user-svc
+#      stripPrefix: false

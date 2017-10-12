@@ -7,14 +7,6 @@ eureka:
       defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
     registerWithEureka: false
 
-zuul:
-  prefix: /api
-  routes:
-    users:
-      path: /userSvc/**
-      serviceId: kraker-info-user-svc
-#      stripPrefix: false
-
 ribbon:
   eureka:
     enabled: true
