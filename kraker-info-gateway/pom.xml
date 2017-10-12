@@ -72,7 +72,7 @@
 		</dependency>
 
 		<!--security-->
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-oauth2</artifactId>
 		</dependency>
@@ -80,7 +80,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-security</artifactId>
 		</dependency>
-
+-->
 		<!--views-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
