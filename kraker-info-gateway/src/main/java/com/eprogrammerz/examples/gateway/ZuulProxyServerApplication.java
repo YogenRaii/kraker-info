@@ -8,7 +8,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @EnableZuulProxy
 @EnableSwagger2
-//@EnableOAuth2Sso
 public class ZuulProxyServerApplication {
 
     public static void main(String[] args) {

@@ -11,21 +11,3 @@ zuul:
       serviceId: kraker-info-user-svc
       sensitiveHeaders:
 #      stripPrefix: false
-    uaa:
-      path: /uaa/**
-      serviceId: kraker-info-auth-server
-      sensitiveHeaders:
-
-#security:
-#  user:
-#    name: root
-#    password: password
-#  oauth2:
-#    client:
-#      accessTokenUri: http://localhost:9093/api/uua/oauth/token
-#      userAuthorizationUri: http://localhost:9093/api/uua/oauth/authorize
-#      clientAuthenticationScheme: form
-#    resource:
-#      userInfoUri: http://localhost:9093/api/uaa/user
-#      preferTokenInfo: false
-#  sessions: ALWAYS

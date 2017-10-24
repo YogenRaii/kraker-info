@@ -71,16 +71,6 @@
 			<version>2.6.1</version>
 		</dependency>
 
-		<!--security-->
-		<!--<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-oauth2</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-security</artifactId>
-		</dependency>
--->
 		<!--views-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -90,13 +80,6 @@
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity4</artifactId>
 		</dependency>
-
-		<!--session-->
-		<!--<dependency>
-			<groupId>org.springframework.session</groupId>
-			<artifactId>spring-session</artifactId>
-		</dependency>-->
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
