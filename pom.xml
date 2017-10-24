@@ -30,6 +30,7 @@
         <module>kraker-info-user-svc</module>
         <module>kraker-info-zipkin</module>
         <module>kraker-info-configuration</module>
+        <module>kraker-info-hystrix-dashboard</module>
         <module>kraker-info-auth-server</module>
     </modules>
 

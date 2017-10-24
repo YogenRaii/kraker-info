@@ -1,0 +1,5 @@
+turbine:
+  aggregator:
+    clusterConfig: Kraker-Info
+  appConfig: kraker-info-gateway,kraker-info-bookmark-svc,kraker-info-user-svc
+  clusterNameExpression: new String("default")
