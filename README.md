@@ -48,3 +48,12 @@ to make sure those values are refreshed for the context.
 #### Setup Redis server
 
 Redis is being used for caching with client Jedis. [Download](https://github.com/MicrosoftArchive/redis/releases) Redis for windows and start server to enable caching.
+
+
+#### Swagger UI
+
+All endpoints are exposed via gateway service. So, swagger-ui for endpoints is at:
+
+```
+http://localhost:9093/swagger-ui.html
+```
