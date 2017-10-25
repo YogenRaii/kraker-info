@@ -2,6 +2,10 @@
 
 Start each of the modules starting with `kraker-info-eureka` which is registry for all the services.
 
+### Architectural Diagram
+
+![Arch Diagram](/kraker-info-docs/arch-diagram.jpg?raw=true "Arch Diagram")
+
 ### Test Endpoint
 
 ```$xslt
