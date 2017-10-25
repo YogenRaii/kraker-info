@@ -1,11 +1,13 @@
 package com.eprogrammerz.examples.bookmarkSvc.controllers;
 
 import com.eprogrammerz.examples.bookmarkSvc.models.Bookmark;
+import com.eprogrammerz.examples.bookmarkSvc.models.types.BookmarkType;
 import com.eprogrammerz.examples.bookmarkSvc.repositories.BookmarkRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.Collection;
 
 /**
@@ -25,7 +27,10 @@ public class BookmarkController {
     @GetMapping("/{userId}/bookmarks/{bookmarkId}")
     Bookmark getBookmark(@PathVariable String userId,
                          @PathVariable Long bookmarkId) {
-        return this.bookmarkRepository.findByUserIdAndId(userId, bookmarkId);
+        Bookmark bookmark = this.bookmarkRepository.findByUserIdAndId(userId, bookmarkId);
+        BookmarkType bookmarkType = (bookmarkId % 2 == 0) ? BookmarkType.COMPLEX : BookmarkType.GENERAL;
+        bookmark.setBookmarkTypes(Arrays.asList(bookmarkType));
+        return bookmark;
     }
 
     @PostMapping("/{userId}/bookmarks")

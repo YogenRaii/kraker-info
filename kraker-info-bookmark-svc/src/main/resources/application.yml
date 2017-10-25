@@ -5,7 +5,6 @@ spring:
   jpa:
     generate-ddl: true
 
-
 eureka:
   client:
     serviceUrl:
@@ -13,7 +12,7 @@ eureka:
 
 ---
 spring:
-  profiles: zipkin
+  profiles: cloud
 eureka:
   instance:
     hostname: ${APPLICATION_DOMAIN}
