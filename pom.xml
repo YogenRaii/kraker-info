@@ -32,6 +32,7 @@
         <module>kraker-info-configuration</module>
         <module>kraker-info-hystrix-dashboard</module>
         <module>kraker-info-auth-server</module>
+        <module>kraker-info-cms</module>
     </modules>
 
     <dependencyManagement>

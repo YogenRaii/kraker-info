@@ -10,6 +10,7 @@ import org.springframework.cache.annotation.CachePut;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -32,6 +33,6 @@ public class BookmarkService {
         if (this.cacheManager.getCache("bookmarks") != null && this.cacheManager.getCache("bookmarks").get(userId) != null) {
             return cacheManager.getCache("bookmarks").get(userId, List.class);
         }
-        return Arrays.asList(new Bookmark());
+        return Collections.singletonList(new Bookmark());
     }
 }

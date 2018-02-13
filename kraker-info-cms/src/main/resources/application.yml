@@ -1,0 +1,14 @@
+server:
+  port: ${USER_SERVICE_PORT:9094}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+management:
+  security:
+    enabled: false
