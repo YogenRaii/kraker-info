@@ -51,7 +51,22 @@ to make sure those values are refreshed for the context.
 
 #### Setup Redis server
 
-Redis is being used for caching with client Jedis. [Download](https://github.com/MicrosoftArchive/redis/releases) Redis for windows and start server to enable caching.
+Redis is being used for caching with client Jedis.
+
+##### For Mac, install Redis with `brew` as
+
+```
+brew install redis
+```
+
+Start Redis-server with:
+
+```
+redis-server /usr/local/etc/redis.conf
+```
+
+##### For windows
+[Download](https://github.com/MicrosoftArchive/redis/releases) and start server to enable caching.
 
 
 #### Swagger UI
