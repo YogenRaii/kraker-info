@@ -11,3 +11,7 @@ zuul:
       serviceId: kraker-info-user-svc
       sensitiveHeaders:
 #      stripPrefix: false
+    bookmarks:
+      path: /bookmarkSvc/**
+      serviceId: kraker-info-bookmark-svc
+      sensitiveHeaders:
