@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 import springfox.documentation.swagger.web.SwaggerResource;
 import springfox.documentation.swagger.web.SwaggerResourcesProvider;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by Yogen on 10/11/2017.
@@ -23,11 +23,10 @@ public class DocumentationController implements SwaggerResourcesProvider {
 
     @Override
     public List<SwaggerResource> get() {
-        final List<SwaggerResource> resources = new ArrayList<>();
-
-        this.registryInfo.getServices().forEach(entry -> resources.add(swaggerResource(entry.getName(), entry.getApiDoc(), entry.getVersion())));
-
-        return resources;
+        return this.registryInfo.getServices()
+                .stream()
+                .map(entry -> swaggerResource(entry.getName(), entry.getApiDoc(), entry.getVersion()))
+                .collect(Collectors.toList());
     }
 
     private SwaggerResource swaggerResource(String name, String location, String version) {
