@@ -1,5 +1,7 @@
 package com.eprogrammerz.examples.gateway.config;
 
+import com.eprogrammerz.examples.gateway.domain.RegistryInfo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
@@ -16,12 +18,15 @@ import java.util.List;
 @Primary
 @EnableAutoConfiguration
 public class DocumentationController implements SwaggerResourcesProvider {
+    @Autowired
+    private RegistryInfo registryInfo;
 
     @Override
     public List<SwaggerResource> get() {
-        List<SwaggerResource> resources = new ArrayList<>();
-        resources.add(swaggerResource("kraker-info-user-svc", "/api/userSvc/v2/api-docs", "2.0"));
-//        resources.add(swaggerResource("kraker-info-bookmark-svc", "/bookmarks/v2/api-docs", "2.0"));
+        final List<SwaggerResource> resources = new ArrayList<>();
+
+        this.registryInfo.getServices().forEach(entry -> resources.add(swaggerResource(entry.getName(), entry.getApiDoc(), entry.getVersion())));
+
         return resources;
     }
 
