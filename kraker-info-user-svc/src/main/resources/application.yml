@@ -1,5 +1,5 @@
 server:
-  port: ${USER_SERVICE_PORT:9096}
+  port: ${USER_SVC_PORT:9096}
 
 feign:
   hystrix:
@@ -16,7 +16,7 @@ hystrix:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${services.bookmarkSvc-service.credentials.uri:http://127.0.0.1:8761}/eureka/
+      defaultZone: ${services.registry.eureka.uri:http://127.0.0.1:8761}/eureka/
 spring:
   redis:
     host: localhost
