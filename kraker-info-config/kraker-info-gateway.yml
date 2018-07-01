@@ -2,6 +2,17 @@ spring:
   cloud:
     config:
       uri: http://localhost:8888
+
+# service via gateway
+gateway:
+  services:
+    - name: kraker-info-user-svc
+      apiDoc: /api/userSvc/v2/api-docs
+      version: 2
+    - name: kraker-info-bookmark-svc
+      apiDoc: /api/bookmarkSvc/v2/api-docs
+      version: 2
+
 # routing config
 zuul:
   prefix: /api
