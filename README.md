@@ -62,7 +62,19 @@ brew install redis
 Start Redis-server with:
 
 ```
+brew services start redis
+```
+
+If you do not want to start with brew, then you can start Redis server as:
+
+```
 redis-server /usr/local/etc/redis.conf
+```
+
+Stop Redis-server:
+
+```
+brew services stop redis
 ```
 
 ##### For windows
