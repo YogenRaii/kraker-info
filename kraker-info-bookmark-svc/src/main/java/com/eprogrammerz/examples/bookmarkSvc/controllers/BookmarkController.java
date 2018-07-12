@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Created by Yogen on 9/26/2017.
@@ -21,7 +22,8 @@ public class BookmarkController {
 
     @GetMapping("/{userId}/bookmarks")
     Collection<Bookmark> getBookmarks(@PathVariable String userId) {
-        return this.bookmarkRepository.findByUserId(userId);
+        List<Bookmark> bookmarks = this.bookmarkRepository.findByUserId(userId);
+        return bookmarks;
     }
 
     @GetMapping("/{userId}/bookmarks/{bookmarkId}")
