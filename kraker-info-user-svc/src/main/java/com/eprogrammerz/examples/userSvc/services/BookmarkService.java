@@ -4,6 +4,7 @@ import com.eprogrammerz.examples.userSvc.clients.BookmarkClient;
 import com.eprogrammerz.examples.userSvc.models.Bookmark;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachePut;
@@ -15,6 +16,7 @@ import java.util.List;
 /**
  * Created by Yogen on 10/11/2017.
  */
+@Slf4j
 @Service
 @RequiredArgsConstructor(onConstructor = @_(@Autowired))
 public class BookmarkService {
@@ -29,9 +31,14 @@ public class BookmarkService {
     }
 
     private List<Bookmark> getBookmarksByUserIdFallback(String userId) {
-        if (this.cacheManager.getCache("bookmarks") != null && this.cacheManager.getCache("bookmarks").get(userId) != null) {
-            return cacheManager.getCache("bookmarks").get(userId, List.class);
+        try {
+            if (this.cacheManager.getCache("bookmarks") != null && this.cacheManager.getCache("bookmarks").get(userId) != null) {
+                return cacheManager.getCache("bookmarks").get(userId, List.class);
+            }
+        } catch (Exception ex) {
+            log.error("Error connecting to Redis: {}", ex.getMessage());
         }
+
         return Collections.singletonList(new Bookmark());
     }
 }

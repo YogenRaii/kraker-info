@@ -71,6 +71,12 @@ If you do not want to start with brew, then you can start Redis server as:
 redis-server /usr/local/etc/redis.conf
 ```
 
+Check if redis is running:
+
+```
+redis-cli ping
+```
+
 Stop Redis-server:
 
 ```
