@@ -26,3 +26,5 @@ nbdist/
 *.iml
 mvnw
 mvnw.cmd
+
+.DS_Store

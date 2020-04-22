@@ -94,3 +94,15 @@ All endpoints are exposed via gateway service. So, swagger-ui for endpoints is a
 ```
 http://localhost:9093/swagger-ui.html
 ```
+
+
+# What is REST?
+
+[Blog](http://blog.miyozinc.com)
+
+# Why REST?
+![Arch Diagram](/kraker-info-docs/why-api.png)
+
+# Why Spring Boot?
+
+[Spring Doc](https://spring.io/projects/spring-boot)
